@@ -1,5 +1,40 @@
+/* Estilo para o contêiner da lista */
 .list {
-  text-align: left;
-  max-width: 750px;
-  margin: auto;
+  margin-top: 20px;
+}
+
+/* Estilo para o título da lista */
+.list h4 {
+  margin-bottom: 10px;
+}
+
+/* Estilo para a lista de tutoriais */
+.list-group {
+  margin-bottom: 10px;
+}
+
+/* Estilo para os itens da lista*/
+.list-group-item {
+  cursor: pointer;
+}
+
+/*Estilo para o item ativo da lista*/
+.list-group-item.active {
+  background-color: #f8f9fa;
+  font-weight: bold;
+}
+
+/*Estilo para o botão "Remove All" */
+.btn-danger {
+  margin-top: 10px;
+}
+
+/*Estilo para o conteúdo do tutorial selecionado*/
+.col-md-6 > div {
+  margin-top: 20px;
+}
+
+/*Estilo para a mensagem de seleção */
+.col-md-6 > div > p {
+  margin-top: 20px;
 }
