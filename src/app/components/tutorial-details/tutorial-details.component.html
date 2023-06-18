@@ -1,60 +1,75 @@
-<div *ngIf="currentTutorial" class="edit-form">
-  <h4>Cadastro</h4>
-  <form>
-    <div class="form-group">
-      <label for="title">Title</label>
-      <input
-        type="text"
-        class="form-control"
-        id="title"
-        [(ngModel)]="currentTutorial.title"
-        name="title"
-      />
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./tutorial-details.component.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div *ngIf="currentTutorial" class="edit-form">
+      <h4>Cadastro</h4>
+      <form>
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input
+            type="text"
+            class="form-control"
+            id="title"
+            [(ngModel)]="currentTutorial.title"
+            name="title"
+          />
+        </div>
+        <div class="form-group">
+          <label for="description">Senha</label>
+          <input
+            type="password"
+            class="form-control"
+            id="description"
+            [(ngModel)]="currentTutorial.description"
+            name="description"
+          />
+        </div>
+
+        <div class="form-group">
+          <label><strong>Status:</strong></label>
+          {{ currentTutorial.published ? "Published" : "Pending" }}
+        </div>
+      </form>
+
+      <button
+        class="badge badge-primary mr-2"
+        *ngIf="currentTutorial.published"
+        (click)="updatePublished(false)"
+      >
+        UnPublish
+      </button>
+      <button
+        *ngIf="!currentTutorial.published"
+        class="badge badge-primary mr-2"
+        (click)="updatePublished(true)"
+      >
+        Publish
+      </button>
+
+      <button class="badge badge-danger mr-2" (click)="deleteTutorial()">
+        Delete
+      </button>
+
+      <button
+        type="submit"
+        class="badge badge-success"
+        (click)="updateTutorial()"
+      >
+        Update
+      </button>
+      <p>{{ message }}</p>
     </div>
-    <div class="form-group">
-      <label for="description">Senha</label>
-      <input
-        type="password"
-        class="form-control"
-        id="description"
-        [(ngModel)]="currentTutorial.description"
-        name="description"
-      />
+
+    <div *ngIf="!currentTutorial">
+      <br />
+      <p>Cannot access this Tutorial...</p>
     </div>
-
-    <div class="form-group">
-      <label><strong>Status:</strong></label>
-      {{ currentTutorial.published ? "Published" : "Pending" }}
-    </div>
-  </form>
-
-  <button
-    class="badge badge-primary mr-2"
-    *ngIf="currentTutorial.published"
-    (click)="updatePublished(false)"
-  >
-    UnPublish
-  </button>
-  <button
-    *ngIf="!currentTutorial.published"
-    class="badge badge-primary mr-2"
-    (click)="updatePublished(true)"
-  >
-    Publish
-  </button>
-
-  <button class="badge badge-danger mr-2" (click)="deleteTutorial()">
-    Delete
-  </button>
-
-  <button type="submit" class="badge badge-success" (click)="updateTutorial()">
-    Update
-  </button>
-  <p>{{ message }}</p>
-</div>
-
-<div *ngIf="!currentTutorial">
-  <br />
-  <p>Cannot access this Tutorial...</p>
-</div>
+  </body>
+</html>
 <!--Cadastro-->
