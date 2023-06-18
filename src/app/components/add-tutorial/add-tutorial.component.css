@@ -1,4 +1,45 @@
-.submit-form {
-  max-width: 300px;
-  margin: auto;
+
+/* Estilo para a mensagem de sucesso*/
+.submit-form h4 {
+  margin-top: 20px;
+  color: green;
 }
+/* Estilo para o contêiner do formulário*/
+.submit-form {
+  max-width: 200px;
+  margin: 0 auto;
+  padding: 20px;
+  
+}
+
+/*Estilo para o rótulo do campo */
+.submit-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/*Estilo para os campos de entrada*/
+.submit-form input[type="text"],
+.submit-form input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+/*Estilo para o botão de envio*/
+.submit-form button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
