@@ -1,4 +1,31 @@
-.edit-form {
-  max-width: 300px;
-  margin: auto;
+.edit-form .form-group {
+  margin-bottom: 10px;
+}
+
+/*Estilo para os botões de ação*/
+.edit-form button {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.edit-form button:hover {
+  background-color: #45a049;
+}
+
+/* Estilo para a mensagem de feedback */
+.edit-form p {
+  margin-top: 10px;
+}
+
+/* Estilo para a mensagem de erro*/
+.edit-form p.error {
+  color: red;
 }
