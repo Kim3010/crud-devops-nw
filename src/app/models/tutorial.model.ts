@@ -1,7 +1,7 @@
 export class Tutorial {
   key?: string | null;
   title?: string;
-  description?: string;
+  password?: string;
   published?: boolean;
   zipCode?: string;
   street?: string;
