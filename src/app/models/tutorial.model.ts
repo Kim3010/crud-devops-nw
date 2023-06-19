@@ -11,5 +11,4 @@ export class Tutorial {
   city?: string;
   state?: string;
   description: any;
-  title: any;
 }
