@@ -10,4 +10,6 @@ export class Tutorial {
   neighborhood?: string;
   city?: string;
   state?: string;
+  description: any;
+  title: any;
 }
