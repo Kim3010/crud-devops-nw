@@ -3,12 +3,11 @@ export class Tutorial {
   title?: string;
   password?: string;
   published?: boolean;
-  zipCode?: string;
-  street?: string;
-  number?: number;
-  complement?: string;
-  neighborhood?: string;
-  city?: string;
-  state?: string;
+  cep?: string;
+  logradouro?: string;
+  bairro?: number;
+  login?: string;
+  cidade?: string;
+  estado?: string;
   description?: any;
 }
