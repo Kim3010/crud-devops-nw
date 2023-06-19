@@ -13,11 +13,12 @@ export class AddTutorialComponent {
   submitted = false;
   cep: any;
   logradouro: any;
-  cidade: any:
+  cidade: any;
   estado:  any;
   login: any;
   password: any;
-  bairro: any
+  bairro: any;
+  description: any;
 
   saveForm(){
   }
