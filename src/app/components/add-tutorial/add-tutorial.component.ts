@@ -11,6 +11,10 @@ export class AddTutorialComponent {
 
   tutorial: Tutorial = new Tutorial();
   submitted = false;
+  cep: any;
+  logradouro: any;
+  cidade: any:
+  estado:  any;
 
   constructor(private tutorialService: TutorialService) { }
 
