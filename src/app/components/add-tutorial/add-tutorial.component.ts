@@ -15,6 +15,15 @@ export class AddTutorialComponent {
   logradouro: any;
   cidade: any:
   estado:  any;
+  login: any;
+  password: any;
+  bairro: any
+
+  saveForm(){
+  }
+  resetForm(){
+    
+  }
 
   constructor(private tutorialService: TutorialService) { }
 
