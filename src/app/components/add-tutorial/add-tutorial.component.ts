@@ -20,22 +20,16 @@ export class AddTutorialComponent {
   bairro: any;
   description: any;
 
-  saveForm(){
-  }
-  resetForm(){
-    
-  }
-
   constructor(private tutorialService: TutorialService) { }
 
-  saveTutorial(): void {
+  saveForm(): void {
     this.tutorialService.create(this.tutorial).then(() => {
       console.log('Created new item successfully!');
       this.submitted = true;
     });
   }
 
-  newTutorial(): void {
+  resetForm(): void {
     this.submitted = false;
     this.tutorial = new Tutorial();
   }
